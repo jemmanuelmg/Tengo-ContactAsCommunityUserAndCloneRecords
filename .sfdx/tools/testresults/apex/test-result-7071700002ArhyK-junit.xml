@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-07-09T13:09:07-05:00" hostname="https://dmstracker--emdev2.my.salesforce.com" tests="1" failures="0"  errors="0"  time="1.7">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Jul 9, 2020 1:09 PM"/>
+            <property name="testExecutionTime" value="1.7 s"/>
+            <property name="testTotalTime" value="1.7 s"/>
+            <property name="commandTime" value="10.46 s"/>
+            <property name="hostname" value="https://dmstracker--emdev2.my.salesforce.com"/>
+            <property name="orgId" value="00D17000000E6NzEAK"/>
+            <property name="username" value="emmanuel.martinez@tengo.co.dms.emdev2"/>
+            <property name="testRunId" value="7071700002ArhyK"/>
+            <property name="userId" value="005170000059QVKAA2"/>
+        </properties>
+        <testcase name="testaActivateOrDeactivateUser" classname="SetContactAsCommunityUserControllerTest" time="1.7">
+        </testcase>
+    </testsuite>
+</testsuites>

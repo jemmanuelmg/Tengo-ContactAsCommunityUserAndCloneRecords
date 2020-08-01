@@ -1,0 +1,46 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Jul 9, 2020 1:09 PM",
+        "testExecutionTime": "1703 ms",
+        "testTotalTime": "1703 ms",
+        "commandTime": "10459 ms",
+        "hostname": "https://dmstracker--emdev2.my.salesforce.com",
+        "orgId": "00D17000000E6NzEAK",
+        "username": "emmanuel.martinez@tengo.co.dms.emdev2",
+        "testRunId": "7071700002ArhyK",
+        "userId": "005170000059QVKAA2"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M1700000Bdpf7EAB"
+            },
+            "Id": "07M1700000Bdpf7EAB",
+            "QueueItemId": "70917000001JYg5AAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7071700002ArhyKAAR",
+            "MethodName": "testaActivateOrDeactivateUser",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p17000006QPOBAA4"
+                },
+                "Id": "01p17000006QPOBAA4",
+                "Name": "SetContactAsCommunityUserControllerTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 1703,
+            "FullName": "SetContactAsCommunityUserControllerTest.testaActivateOrDeactivateUser"
+        }
+    ]
+}

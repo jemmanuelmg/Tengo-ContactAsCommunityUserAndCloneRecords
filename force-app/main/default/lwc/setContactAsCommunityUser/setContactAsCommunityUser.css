@@ -1,0 +1,37 @@
+/*input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+}*/
+
+.container-div{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.search-icon{
+    margin-top: 7px; 
+    margin-left: 4px; 
+    margin-right: 4px;
+}
+
+.title{
+    display: block;
+}
+
+.title-text{
+    margin-top: 4px;
+}
+
+.box-to-left{
+    float:left !important;
+    margin-top: 8px;
+}
+
+.box-to-right{
+    float:right !important;
+}
+
+.clear{
+    clear:both;
+}

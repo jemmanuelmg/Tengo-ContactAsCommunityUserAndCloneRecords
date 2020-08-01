@@ -1,0 +1,42 @@
+=== Test Reports
+FORMAT  FILE
+──────  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+txt     c:\Users\Emmanuel Martinez\Desktop\EnableContactAsCommunityUser\.sfdx\tools\testresults\apex\test-result.txt
+txt     c:\Users\Emmanuel Martinez\Desktop\EnableContactAsCommunityUser\.sfdx\tools\testresults\apex\test-run-id.txt
+junit   c:\Users\Emmanuel Martinez\Desktop\EnableContactAsCommunityUser\.sfdx\tools\testresults\apex\test-result-7071700002Aribp-junit.xml
+json    c:\Users\Emmanuel Martinez\Desktop\EnableContactAsCommunityUser\.sfdx\tools\testresults\apex\test-result-7071700002Aribp.json
+
+=== Test Results
+TEST NAME                                                              OUTCOME  MESSAGE                                                                                          RUNTIME (MS)
+─────────────────────────────────────────────────────────────────────  ───────  ───────────────────────────────────────────────────────────────────────────────────────────────  ────────────
+SetContactAsCommunityUserControllerTest.testGetCommunityUsersReportId  Fail     System.QueryException: List has no rows for assignment to SObject                                58
+                                                                                Class.SetContactAsCommunityUserController.getCommunityUsersReportId: line 81, column 1
+                                                                                Class.SetContactAsCommunityUserControllerTest.testGetCommunityUsersReportId: line 108, column 1
+
+=== Failures
+FULLNAME                                                               MESSAGE
+─────────────────────────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+SetContactAsCommunityUserControllerTest.testGetCommunityUsersReportId  System.QueryException: List has no rows for assignment to SObject
+                                                                       c:/Users/Emmanuel Martinez/Desktop/EnableContactAsCommunityUser/force-app/main/default/classes/SetContactAsCommunityUserController.cls:81:1
+                                                                       c:/Users/Emmanuel Martinez/Desktop/EnableContactAsCommunityUser/force-app/main/default/classes/SetContactAsCommunityUserControllerTest.cls:108:1
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ─────────────────────────────────────────────
+Outcome              Failed
+Tests Ran            1
+Passing              0
+Failing              1
+Skipped              0
+Pass Rate            0%
+Fail Rate            100%
+Test Start Time      Jul 9, 2020 1:12 PM
+Test Execution Time  58 ms
+Test Total Time      58 ms
+Command Time         7948 ms
+Hostname             https://dmstracker--emdev2.my.salesforce.com
+Org Id               00D17000000E6NzEAK
+Username             emmanuel.martinez@tengo.co.dms.emdev2
+Test Run Id          7071700002Aribp
+User Id              005170000059QVKAA2
+

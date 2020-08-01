@@ -1,0 +1,69 @@
+<!--
+  @description       : 
+  @author            : emmanuel.martinez@tengo.co
+  @group             : 
+  @last modified on  : 07-10-2020
+  @last modified by  : emmanuel.martinez@tengo.co
+  Modifications Log 
+  Ver   Date         Author                       Modification
+  1.0   07-03-2020   emmanuel.martinez@tengo.co   Initial Version
+-->
+<template>
+    
+    <div class="container-div slds-is-relative">
+        <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+        <div class="title">
+            <lightning-layout>
+                <lightning-layout-item><lightning-icon icon-name="action:new_contact" size="xx-small"></lightning-icon></lightning-layout-item> &nbsp;&nbsp;&nbsp;
+                <lightning-layout-item flexibility="auto"><div class="slds-text-heading_small title-text"><b>Community Users - Manage Contacts</b></div></lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+        <br>
+
+        <template if:true={enableAccessToComponent}>
+            <div class="slds-form-element__control">
+                <lightning-layout style="border-radius: 4px;">
+                    <lightning-layout-item flexibility="auto"><input id="input" name="input" list="valueList" placeholder="Type the name of a contact or select one" required={required} class="slds-input" type="text" value={value} onchange={handleChange} onblur={handleChange}/></lightning-layout-item>
+                    <lightning-layout-item><lightning-icon icon-name="utility:search" size="x-small" class="search-icon"></lightning-icon></lightning-layout-item>
+                </lightning-layout>
+                <datalist id="valueList">
+                    <template for:each={contacts} for:item='item'>
+                        <option key={item.Id} value={item.Name}>{item.Name}</option>
+                    </template>
+                </datalist>
+            </div>
+
+            <br>
+
+            <center>
+                <lightning-button variant="brand" label="Enable Community User" icon-name="utility:people" title="Primary action" onclick={convertContact} class="slds-m-left_x-small"></lightning-button>
+            </center>
+
+            <br>
+        </template>
+
+        <div>
+            <div class="slds-text-body_regular box-to-left">Account Community Users:</div>
+            <lightning-button variant="base" label="Community Usage Report" onclick={goToReport} class="slds-m-left_x-small box-to-right"></lightning-button>
+        </div>
+
+        <div class="clear">
+        <template if:true={usersFound}>
+            <lightning-datatable 
+                key-field="id" 
+                data={users} 
+                columns={columns}
+                hide-checkbox-column="true"
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </template>
+        <template if:false={usersFound}>
+                <div class="slds-text-body_regular"><i>No users found</i></div>
+        </template>
+        </div>
+
+        <br>
+        <br>
+    </div>
+</template>

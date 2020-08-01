@@ -1,0 +1,46 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Jul 9, 2020 1:12 PM",
+        "testExecutionTime": "58 ms",
+        "testTotalTime": "58 ms",
+        "commandTime": "7948 ms",
+        "hostname": "https://dmstracker--emdev2.my.salesforce.com",
+        "orgId": "00D17000000E6NzEAK",
+        "username": "emmanuel.martinez@tengo.co.dms.emdev2",
+        "testRunId": "7071700002Aribp",
+        "userId": "005170000059QVKAA2"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M1700000BdpfCEAR"
+            },
+            "Id": "07M1700000BdpfCEAR",
+            "QueueItemId": "70917000001JYgAAAW",
+            "StackTrace": "Class.SetContactAsCommunityUserController.getCommunityUsersReportId: line 81, column 1\nClass.SetContactAsCommunityUserControllerTest.testGetCommunityUsersReportId: line 108, column 1",
+            "Message": "System.QueryException: List has no rows for assignment to SObject",
+            "AsyncApexJobId": "7071700002AribpAAB",
+            "MethodName": "testGetCommunityUsersReportId",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p17000006QPOBAA4"
+                },
+                "Id": "01p17000006QPOBAA4",
+                "Name": "SetContactAsCommunityUserControllerTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 58,
+            "FullName": "SetContactAsCommunityUserControllerTest.testGetCommunityUsersReportId"
+        }
+    ]
+}

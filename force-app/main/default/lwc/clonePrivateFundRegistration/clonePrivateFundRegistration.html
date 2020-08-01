@@ -1,0 +1,38 @@
+<!--
+  @description       : 
+  @author            : emmanuel.martinez@tengo.co
+  @group             : 
+  @last modified on  : 07-14-2020
+  @last modified by  : emmanuel.martinez@tengo.co
+  Modifications Log 
+  Ver   Date         Author                       Modification
+  1.0   07-14-2020   emmanuel.martinez@tengo.co   Initial Version
+-->
+<template>    
+    <div class="slds-box slds-is-relative">
+
+        <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+        
+        <div class="title">
+            <lightning-layout>
+                <!--lead_convert-->
+                <lightning-layout-item><lightning-icon icon-name="action:follow" size="xx-small" class="icon"></lightning-icon></lightning-layout-item> &nbsp;&nbsp;&nbsp;
+                <lightning-layout-item flexibility="auto"><div class="slds-text-heading_small title-text"><b>Clone Existing Private Fund Registration</b></div></lightning-layout-item>
+            </lightning-layout>
+
+            <br>
+            <br>
+
+            <center>
+                <lightning-button variant="brand-outline" label="Clone Record" title="Primary action" onclick={clonePrivateFundRegistration}>Clone Record hola</lightning-button>
+            </center>
+
+            <br>
+            <br>
+
+
+        </div>
+
+    </div>
+
+</template>
